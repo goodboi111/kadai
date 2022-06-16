@@ -7,7 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-<h2>Dispnameの表示結果を16進表示</h2>
 <h2>カンマ区切りの社員名を配列にして関数に渡して社員名を一人ずつ表示</h2>
 <?php
     require_once('function.php');
@@ -17,17 +16,22 @@
     //社員名を配列にする
     $shainmeiArray = [];
     $shainmeiArray = explode(",", $shainmeis);
-
-    // $shainmeiHexArray = array();
-    // $shainmeiHexArray = bin2hex($shainmeiArray);
-    
 ?>
 <!-- 表示 -->
 <h3>値渡し</h3>
-<?php dispShainmeiAtai($shainmeiArray); ?>
+<?php 
+    // dispShainmeiAtai($shainmeiArray);
+    showData(getShainmeiAtai($shainmeiArray)); 
+?>
 <h3>参照渡し</h3>
-<?php dispShainmeiSansyo($shainmeiArray); ?>
+<?php 
+    // dispShainmeiSansyo($shainmeiArray);
+    showData(getShainmeiSansyo($shainmeiArray));
+?>
 <h3>文字列を大文字に変更</h3>
-<?php dispUpperCaseText($shainmeis); ?>
+<?php 
+    // dispUpperCaseText($shainmeis);
+    showData(getUpperCaseText($shainmeis));
+?>
 </body>
 </html>

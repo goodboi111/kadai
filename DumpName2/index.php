@@ -17,22 +17,13 @@
     //社員名を配列にする
     $shainmeiArray = [];
     $shainmeiArray = explode(",", $shainmeis);
-
-    // $shainmeiHexArray = array();
-    // $shainmeiHexArray = bin2hex($shainmeiArray);
-    
 ?>
 <!-- 表示 -->
 <h3>値渡し</h3>
-<?php dispShainmeiAtai($shainmeiArray); ?>
+<?php showDataHex(getShainmeiAtai($shainmeiArray)); ?>
 <h3>参照渡し</h3>
-<?php dispShainmeiSansyo($shainmeiArray); ?>
+<?php showDataHex(getShainmeiSansyo($shainmeiArray)); ?>
 <h3>文字列を大文字に変更</h3>
-<?php dispUpperCaseText($shainmeis); ?>
-<?php 
-$tmp = 'test';
-$tmps = ["test", "test3"];
-
-showData($tmps); ?>
+<?php showDataHex(getUpperCaseText($shainmeis)); ?>
 </body>
 </html>

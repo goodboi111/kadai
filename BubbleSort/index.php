@@ -22,15 +22,15 @@
     $shainmeiSortArray = [];
 
     // 関数により並び替え
-    $shainmeiSortArray = bubble_sort($shainmeiArray);
+    $shainmeiSortArray = bubbleSort($shainmeiArray);
 
 ?>    
 <!-- 表示 -->
 <h3>値渡し</h3>
-<?php dispShainmeiAtai($shainmeiSortArray); ?>
+<?php showData(getShainmeiAtai($shainmeiSortArray)); ?>
 <h3>参照渡し</h3>
-<?php dispShainmeiSansyo($shainmeiSortArray); ?>
+<?php showData(getShainmeiSansyo($shainmeiSortArray)); ?>
 <!-- <h3>文字列を大文字に変更</h3> -->
-<?php //dispUpperCaseText($shainmeis); ?>
+<?php // showData(getUpperCaseText($shainmeis)); ?>
 </body>
 </html>
