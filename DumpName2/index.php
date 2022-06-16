@@ -29,5 +29,10 @@
 <?php dispShainmeiSansyo($shainmeiArray); ?>
 <h3>文字列を大文字に変更</h3>
 <?php dispUpperCaseText($shainmeis); ?>
+<?php 
+$tmp = 'test';
+$tmps = ["test", "test3"];
+
+showData($tmps); ?>
 </body>
 </html>

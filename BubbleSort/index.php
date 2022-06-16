@@ -15,11 +15,11 @@
     $shainmeis = "Yamada,Tanaka,Sato,Imai";
 
     // 社員名を配列にする
-    $shainmeiArray = array();
+    $shainmeiArray = [];
     $shainmeiArray = explode(",", $shainmeis);
 
     // ソート済み社員名用の配列を宣言
-    $shainmeiSortArray = array();
+    $shainmeiSortArray = [];
 
     // 関数により並び替え
     $shainmeiSortArray = bubble_sort($shainmeiArray);

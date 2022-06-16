@@ -15,7 +15,7 @@
     $shainmeis = "Yamada,Tanaka,Sato,Imai";
 
     //社員名を配列にする
-    $shainmeiArray = array();
+    $shainmeiArray = [];
     $shainmeiArray = explode(",", $shainmeis);
 
     // $shainmeiHexArray = array();

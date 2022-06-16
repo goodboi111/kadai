@@ -1,4 +1,8 @@
 <?php
+function hello() {
+    echo "hello";
+}
+
 // 値渡し
 function dispShainmeiAtai($shainmeiArray) {
     for ($i = 0; $i < count($shainmeiArray); $i++) {
@@ -15,9 +19,23 @@ function dispShainmeiSansyo(&$shainmeiArray) {
     }
 }
 
+// 表示
+function showData($data) {
+    echo $data;
+}
+
 // 大文字化
 function dispUpperCaseText($shainmeis) {
     $upperCaseText = strtoupper($shainmeis);
     echo bin2hex($upperCaseText);
+}
+
+function strToHex() {
+
+}
+
+// 文字列をASCⅡに変換
+function strToAsc2() {
+
 }
 ?>
