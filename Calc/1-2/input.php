@@ -13,10 +13,10 @@
 			<input type="text" name="num1">
 			<label>記号</label>
 			<select name="symbol">
-			<option value="+">+</option>
-			<option value="-">-</option>
-			<option value="*">×</option>
-			<option value="/">÷</option>
+				<option value="+">+</option>
+				<option value="-">-</option>
+				<option value="*">×</option>
+				<option value="/">÷</option>
       		</select>
 			<label>数字2</label>
 			<input type="text" name="num2">

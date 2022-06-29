@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-<h2>Dispnameの表示結果を16進表示</h2>
+<h2>DumbName2 16進変換関数を自作</h2>
 <h2>カンマ区切りの社員名を配列にして関数に渡して社員名を一人ずつ表示</h2>
 <?php
     require_once('function.php');
@@ -17,6 +17,8 @@
     //社員名を配列にする
     $shainmeiArray = [];
     $shainmeiArray = explode(",", $shainmeis);
+
+    $str = "Yamada,Tanaka,Sato,Imai";
 ?>
 <!-- 表示 -->
 <h3>値渡し</h3>
