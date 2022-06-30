@@ -65,5 +65,11 @@
     </select>
     <input type="submit" class="btn" value="削除">
 </form>
+<!-- 社員番号での絞り込み -->
+<form action="./serach_result.php" method="post">
+    <input type="text" name="num1">
+    <input type="text" name="num2">
+    <input type="submit" class="btn" value="絞り込む">
+</form>
 </body>
 </html>

@@ -23,6 +23,6 @@
         <td><input type="submit" value="追加" class="btn"></td>
     </form>
 </table>
-    <a href="./index.php" style="btn">戻る</a>
+    <a href="./index.php" class="btn">戻る</a>
 </body>
 </html>

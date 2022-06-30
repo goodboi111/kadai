@@ -22,15 +22,23 @@
 
         // 受け取ったデータを配列へ
         $line = [];
-        $line[0] = $_POST["no"];
+        $line[0] = intval($_POST["no"]);
         $line[1] = $_POST["jname"];
         $line[2] = $_POST["name"];
         $line[3] = $_POST["birth"];
+
+        // フォーマット変更　例:001 → 1
+        $line[0] = intval($line[0]);
 
         // 日付データのフォーマット変更　例：2000-01-01 → 2000/1/1
         $theDate = new DateTime($line[3]);
         $stringDate = $theDate->format("Y/n/j");
         $line[3] = $stringDate;
+
+        // csvファイルの中身を,ごとに区切り多次元配列へ
+        for ($i = 0; $i < count($meibos); $i++) {
+            $meiboMultiArray[$i] = explode(",", $meibos[$i]);
+        }
 
         // 配列を,で区切り文字列変数へ
         $add = implode(",", $line);

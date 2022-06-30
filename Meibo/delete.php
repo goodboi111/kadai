@@ -21,6 +21,6 @@
         deleteRow($meibos, $deleteRow);
     ?>
     <p>削除しました。</p>
-    <a href="./index.php" style="btn">戻る</a>
+    <a href="./index.php" class="btn">戻る</a>
 </body>
 </html>

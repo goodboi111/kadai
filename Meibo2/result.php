@@ -60,7 +60,7 @@
         $fp = './Meibo.csv';        
         // file_put_contents($fp, $add ."\n", FILE_APPEND | LOCK_EX);
     ?>
-    <a href="./index.php" style="btn">戻る</a>
+    <a href="./index.php" class="btn">戻る</a>
 </head>
 <body>
     

@@ -17,7 +17,6 @@ for ($i = 0; $i < count($meibos); $i++) {
 // 社員番号順にソート
 $meiboMultiArray = bubbleSort($meiboMultiArray);
 
-
 // 削除関係
 // 削除すべき行の取得
 function getDeleteRow($MultiArray, $no) {

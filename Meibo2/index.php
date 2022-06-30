@@ -52,6 +52,13 @@
     //     echo "</tr>";
     // }
 
+    // （表示用）日付データのフォーマット変更　例：2000/1/1 → 2000/01/01
+    for ($i = 0; $i < count($meiboMultiArray); $i++) {
+        $stringDate = new DateTime($meiboMultiArray[$i][3]);
+        $theDate = $stringDate->format("Y/m/d");
+        $meiboMultiArray[$i][3] = $theDate;
+    }
+    
     for ($i = 0; $i < count($meiboMultiArray); $i++) {
         echo "<tr>";
         echo str_pad("<td>". str_pad($meiboMultiArray[$i][0], 3, "0", STR_PAD_LEFT) ."</td>", 3, "0");
