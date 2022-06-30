@@ -29,13 +29,17 @@
         <th>生年月日</th>
     </tr>
 <?php
+        // echo str_pad("<td>". $meiboMultiArray[$i][0] ."</td>", 3, "0", STR_PAD_LEFT);
+
     for ($i = 0; $i < count($meiboMultiArray); $i++) {
         echo "<tr>";
-        for ($j = 0; $j < count($meiboMultiArray[$i]); $j++) {
+        echo "<td>". str_pad($meiboMultiArray[$i][0], 3, "0", STR_PAD_LEFT) ."</td>";
+        for ($j = 1; $j < count($meiboMultiArray[$i]); $j++) {
             echo "<td>". $meiboMultiArray[$i][$j] ."</td>";
         }
         echo "</tr>";
     }
+
 ?>
 </table>
 <a href="./add.php" class="btn">追加</a>
@@ -44,7 +48,7 @@
     <select name="no" id="">
         <?php
         for ($i = 0; $i < count($meiboMultiArray); $i++) {
-            echo "<option value=". $meiboMultiArray[$i][0] .">". $meiboMultiArray[$i][0] ."</option>";
+            echo ". <option value=". $meiboMultiArray[$i][0].">". str_pad($meiboMultiArray[$i][0], 3, "0", STR_PAD_LEFT) ."</option>";
         }
         ?>
     </select>
@@ -55,7 +59,7 @@
     <select name="no" id="">
         <?php
         for ($i = 0; $i < count($meiboMultiArray); $i++) {
-            echo "<option value=". $meiboMultiArray[$i][0] .">". $meiboMultiArray[$i][0] ."</option>";
+            echo "<option value=". $meiboMultiArray[$i][0] .">". str_pad($meiboMultiArray[$i][0], 3, "0", STR_PAD_LEFT) ."</option>";
         }
         ?>
     </select>
